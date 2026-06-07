@@ -12,8 +12,8 @@
 
 ###
 
-<p align="center">Google Developers Group OnCampus ACE - Core Team</p>
-<p align="center">Currently exploring Distributed Systems & Real-Time Systems.</p>
+<p align="left">Google Developers Group OnCampus ACE - Core Team</p>
+<p align="left">Currently exploring Distributed Systems & Real-Time Systems.</p>
 
 
 ###
