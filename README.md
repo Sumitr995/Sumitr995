@@ -1,5 +1,5 @@
 <div align="center">
-  <img height="600" src="https://i.pinimg.com/1200x/59/61/38/596138beb239ada8aab67dbb4e288be7.jpg"  />
+  <img height="400" src="https://i.pinimg.com/1200x/59/61/38/596138beb239ada8aab67dbb4e288be7.jpg"  />
 </div>
 
 ###
@@ -14,6 +14,7 @@
 
 <p align="center">Google Developers Group OnCampus ACE - Core Team</p>
 <p align="center">Currently exploring Distributed Systems & Real-Time Systems.</p>
+
 
 ###
 
@@ -61,6 +62,14 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="40" alt="linux logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" height="40" alt="figma logo"  />
+  <img width="12" />
+  <img src="https://cdn.simpleicons.org/netlify/00C7B7" height="40" alt="netlify logo"  />
+  <img width="12" />
+  <img src="https://skillicons.dev/icons?i=vercel" height="40" alt="vercel logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" height="40" alt="google logo"  />
+  <img width="12" />
+  <img src="https://cdn.simpleicons.org/webflow/4353FF" height="40" alt="webflow logo"  />
 </div>
 
 ###
