@@ -4,19 +4,20 @@
 
 ###
 
-<h3 align="left">Hii Folks! I am Sumit Rathod👋</h3>
+<h3 align="left">Hi there, I'm Sumit Rathod</h3>
 
 ###
 
-<h4 align="left">Full Stack Developer | Software Developer  | Cloud/DevOps Engineer  | Frontend & Backend</h4>
+<h4 align="left">Full Stack Developer | Software Developer | Cloud/DevOps Engineer | Specializing in Scalable Real-Time Systems</h4>
 
 ###
 
-<p align="left">Learning Distributed Systems & Real-Time Systems</p>
+<p align="center">Google Developers Group OnCampus ACE - Core Team</p>
+<p align="center">Currently exploring Distributed Systems & Real-Time Systems.</p>
 
 ###
 
-<h2 align="left">Stack:</h2>
+<h2 align="left">Tech Stack</h2>
 
 ###
 
@@ -26,8 +27,6 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="40" alt="cplusplus logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="react logo"  />
   <img width="12" />
@@ -59,44 +58,42 @@
   <img width="12" />
   <img src="https://skillicons.dev/icons?i=kafka" height="40" alt="apachekafka logo"  />
   <img width="12" />
-  <img src="https://cdn.simpleicons.org/npm/CB3837" height="40" alt="npm logo"  />
-  <img width="12" />
-  <img src="https://cdn.simpleicons.org/postman/FF6C37" height="40" alt="postman logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" height="40" alt="bash logo"  />
-  <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="40" alt="linux logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" alt="git logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=github" height="40" alt="github logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" height="40" alt="figma logo"  />
 </div>
 
 ###
 
-<h2 align="left">Social Media:</h2>
+<h2 align="left">Featured Projects</h2>
+
+###
+
+<p align="left"><b><a href="https://github.com/Sumitr995/designathon-2.0">GDGC Designathon 2.0 Platform</a></b> - High-performance hackathon platform used by 700+ participants.</p>
+<p align="left"><b><a href="https://github.com/Sumitr995/Auth-Service-App">Auth Service — MERN Authentication</a></b> - Secure, production-style authentication system with OTP workflows.</p>
+<p align="left"><b><a href="https://github.com/Sumitr995/Trafficore">Trafficore — R&D Project</a></b> - Real-time emergency traffic management using IoT (Node.js, MQTT, WebSockets).</p>
+
+###
+
+<h2 align="left">Connect with me</h2>
 
 ###
 
 <div align="center">
-  <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="20" alt="linkedin logo"  />
-  <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=for-the-badge" height="20" alt="discord logo"  />
-  <img src="https://img.shields.io/static/v1?message=Youtube&logo=youtube&label=&color=FF0000&logoColor=white&labelColor=&style=for-the-badge" height="20" alt="youtube logo"  />
-  <img src="https://img.shields.io/static/v1?message=Linktree&logo=linktree&label=&color=1de9b6&logoColor=white&labelColor=&style=for-the-badge" height="20" alt="linktree logo"  />
-  <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="20" alt="gmail logo"  />
-  <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="20" alt="instagram logo"  />
-  <img src="https://img.shields.io/static/v1?message=Medium&logo=medium&label=&color=12100E&logoColor=white&labelColor=&style=for-the-badge" height="20" alt="medium logo"  />
-  <img src="https://img.shields.io/static/v1?message=Whatsapp&logo=whatsapp&label=&color=25D366&logoColor=white&labelColor=&style=for-the-badge" height="20" alt="whatsapp logo"  />
+  <a href="https://www.linkedin.com/in/sumitr995/"><img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="linkedin logo"  /></a>
+  <a href="https://sumitr995.me/"><img src="https://img.shields.io/static/v1?message=Portfolio&logo=about.me&logoColor=white&label=&color=000000&style=for-the-badge" height="25" alt="portfolio logo" /></a>
+  <a href="mailto:itzsumitr995@gmail.com"><img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="gmail logo"  /></a>
+  <a href="https://github.com/Sumitr995"><img src="https://img.shields.io/static/v1?message=Github&logo=github&label=&color=181717&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="github logo"  /></a>
 </div>
 
 ###
 
+<div align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sumitr995/Sumitr995/pacman-output/galaga-contribution-graph-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sumitr995/Sumitr995/pacman-output/galaga-contribution-graph.svg">
   <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/Sumitr995/Sumitr995/pacman-output/galaga-contribution-graph.svg">
 </picture>
+</div>
 
 ###
