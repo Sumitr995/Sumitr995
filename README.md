@@ -8,13 +8,13 @@
 
 ###
 
-<h4 align="left">Full Stack Developer | Software Developer | Cloud/DevOps Engineer | Specializing in Scalable Real-Time Systems</h4>
+ > <h4 align="left">Full Stack Developer | Software Developer | Cloud/DevOps Engineer | Specializing in Scalable Real-Time Systems</h4>
 
 ###
-
-<p align="left">Google Developers Group OnCampus ACE - Core Team</p>
-<p align="left">Currently exploring Distributed Systems & Real-Time Systems.</p>
-
+```
+Google Developers Group OnCampus ACE - Core Team
+Currently exploring Distributed Systems & Real-Time Systems.
+```
 
 ###
 
