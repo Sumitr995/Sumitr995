@@ -1,0 +1,62 @@
+name: Rotate Profile Slideshow
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  rotate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Rotate image
+        shell: bash
+        run: |
+          IMAGE_DIR="assets/slideshow"
+          INDEX_FILE="$IMAGE_DIR/index.txt"
+          CURRENT_IMAGE="$IMAGE_DIR/current.jpg"
+
+          # Number of slideshow images
+          TOTAL_IMAGES=$(find "$IMAGE_DIR" -maxdepth 1 -name "image-*.jpg" | wc -l)
+
+          # Read current index
+          CURRENT_INDEX=$(cat "$INDEX_FILE")
+
+          # Calculate next image
+          NEXT_INDEX=$((CURRENT_INDEX + 1))
+
+          if [ "$NEXT_INDEX" -gt "$TOTAL_IMAGES" ]; then
+            NEXT_INDEX=1
+          fi
+
+          echo "Current image: $CURRENT_INDEX"
+          echo "Next image: $NEXT_INDEX"
+          echo "Total images: $TOTAL_IMAGES"
+
+          # Copy next image
+          cp "$IMAGE_DIR/image-$NEXT_INDEX.jpg" "$CURRENT_IMAGE"
+
+          # Save new index
+          echo "$NEXT_INDEX" > "$INDEX_FILE"
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add assets/slideshow/current.jpg
+          git add assets/slideshow/index.txt
+
+          git diff --cached --quiet || git commit -m "chore: rotate profile slideshow"
+
+      - name: Push changes
+        run: |
+          git push
