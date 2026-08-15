@@ -3,7 +3,6 @@ name: Rotate Profile Slideshow
 on:
   schedule:
     - cron: '*/5 * * * *'
-
   workflow_dispatch:
 
 permissions:
