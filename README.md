@@ -15,6 +15,7 @@
  > <h4 align="left">Full Stack Developer | Software Developer | Cloud/DevOps Engineer | Specializing in Scalable Real-Time Systems</h4>
 
 ###
+
 ```
 Google Developers Group OnCampus ACE - Core Team
 Currently exploring Distributed Systems & Real-Time Systems.
@@ -82,9 +83,70 @@ Currently exploring Distributed Systems & Real-Time Systems.
 
 ###
 
-<p align="left"><b><a href="https://github.com/Sumitr995/designathon-2.0">GDGC Designathon 2.0 Platform</a></b> - High-performance hackathon platform used by 700+ participants.</p>
-<p align="left"><b><a href="https://github.com/Sumitr995/Auth-Service-App">Auth Service — MERN Authentication</a></b> - Secure, production-style authentication system with OTP workflows.</p>
-<p align="left"><b><a href="https://github.com/Sumitr995/Trafficore">Trafficore — R&D Project</a></b> - Real-time emergency traffic management using IoT (Node.js, MQTT, WebSockets).</p>
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### ▲ MarkForge — AI Document Intelligence
+<p>
+  <sub><b>Live:</b> <a href="https://markforge.sumitr995.me">markforge.sumitr995.me</a> · <a href="https://markforge.onrender.com/api/v1/health">API</a></sub>
+</p>
+<p>Transform dense PDFs into structured, readable knowledge — not a summary, not a chatbot. Zero-token extraction with Microsoft MarkItDown + Groq <code>llama-3.3-70b</code> on clean markdown.</p>
+<p><code>React 19</code> <code>Express 5</code> <code>Python 3.12</code> <code>Groq</code> <code>MarkItDown</code> <code>Docker</code></p>
+<p><a href="https://github.com/Sumitr995/MarkForge">Repo →</a></p>
+
+</td>
+<td width="50%" valign="top">
+
+### ● Auth Service — MERN Auth SaaS
+<p>
+  <sub><b>Live:</b> <a href="https://auth.sumitr995.me">auth.sumitr995.me</a></sub>
+</p>
+<p>Auth-as-a-Service inspired by Clerk/Auth0 — multi-tenant architecture with projects, scoped API keys, JWT httpOnly cookies, OTP email verification & password reset.</p>
+<p><code>React 19</code> <code>Node.js</code> <code>Express</code> <code>MongoDB</code> <code>JWT</code> <code>Nodemailer</code></p>
+<p><a href="https://github.com/Sumitr995/Auth-Service-App">Repo →</a></p>
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### ■ GDGC Designathon 2.0 Platform
+<p>
+  <sub>Used by <b>700+ participants</b> — high-performance hackathon experience</sub>
+</p>
+<p>Contributed responsive UI components and interactive animations for the official GDGC ACE hackathon platform.</p>
+<p><code>React</code> <code>TypeScript</code> <code>TailwindCSS</code> <code>Framer Motion</code> <code>GSAP</code></p>
+<p><a href="https://github.com/Sumitr995/designathon-2.0">Repo →</a></p>
+
+</td>
+<td width="50%" valign="top">
+
+### ◆ Query Tracker — Collaborative Network
+<p>
+  <sub><b>Live:</b> <a href="https://query-tracker.vercel.app">query-tracker.vercel.app</a></sub>
+</p>
+<p>MERN ticket management with centralized transparency — cookie auth + RBAC, global Mission Logs, collaborative solving, and Admin Command Center.</p>
+<p><code>React</code> <code>Node.js</code> <code>Express</code> <code>MongoDB</code> <code>RBAC</code> <code>Docker</code></p>
+<p><a href="https://github.com/Sumitr995/Query-Tracker">Repo →</a></p>
+
+</td>
+</tr>
+</table>
+
+<p align="center">
+  <sub>More? See <a href="https://sumitr995.me">Portfolio</a> and <a href="https://github.com/Sumitr995?tab=repositories">all repositories</a> — including <a href="https://github.com/Sumitr995/Project-I.R.I.S">Project I.R.I.S</a> (RBAC/Redis) and <a href="https://github.com/Sumitr995/Ticket-System">Ticket System</a>.</sub>
+</p>
+
+###
+
+<h2 align="left">Stats & Achievements</h2>
+
+###
+
+<p align="left">🏆 <b>AIR 4,967</b> in AINCAT 2025 (2.1L+ participants)<br/>
+🏅 <b>25+ Google Cloud Skill Badges</b><br/>
+🤖 <b>Team Lead</b> at HackRobo 1.0 — Top 10 Finalist</p>
 
 ###
 
