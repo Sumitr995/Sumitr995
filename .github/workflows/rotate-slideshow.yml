@@ -2,11 +2,15 @@ name: Rotate Profile Slideshow
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: "*/30 * * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: profile-slideshow
+  cancel-in-progress: false
 
 jobs:
   rotate:
@@ -15,17 +19,43 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+          ref: main
 
       - name: Rotate image
         shell: bash
         run: |
+          set -euo pipefail
+
           IMAGE_DIR="assets/slideshow"
           INDEX_FILE="$IMAGE_DIR/index.txt"
           CURRENT_IMAGE="$IMAGE_DIR/current.jpg"
 
-          TOTAL_IMAGES=$(find "$IMAGE_DIR" -maxdepth 1 -name "image-*.jpg" | wc -l)
+          mapfile -t IMAGES < <(
+            find "$IMAGE_DIR" \
+              -maxdepth 1 \
+              -type f \
+              -name "image-*.jpg" \
+              | sort -V
+          )
 
-          CURRENT_INDEX=$(cat "$INDEX_FILE")
+          TOTAL_IMAGES=${#IMAGES[@]}
+
+          if [ "$TOTAL_IMAGES" -eq 0 ]; then
+            echo "ERROR: No slideshow images found."
+            exit 1
+          fi
+
+          if [ ! -f "$INDEX_FILE" ]; then
+            echo "0" > "$INDEX_FILE"
+          fi
+
+          CURRENT_INDEX=$(tr -d '[:space:]' < "$INDEX_FILE")
+
+          if ! [[ "$CURRENT_INDEX" =~ ^[0-9]+$ ]]; then
+            CURRENT_INDEX=0
+          fi
 
           NEXT_INDEX=$((CURRENT_INDEX + 1))
 
@@ -33,24 +63,42 @@ jobs:
             NEXT_INDEX=1
           fi
 
-          echo "Current image: $CURRENT_INDEX"
-          echo "Next image: $NEXT_INDEX"
+          NEXT_IMAGE="$IMAGE_DIR/image-$NEXT_INDEX.jpg"
+
+          if [ ! -f "$NEXT_IMAGE" ]; then
+            echo "ERROR: $NEXT_IMAGE does not exist."
+            exit 1
+          fi
+
+          echo "Current index: $CURRENT_INDEX"
+          echo "Next index: $NEXT_INDEX"
           echo "Total images: $TOTAL_IMAGES"
 
-          cp "$IMAGE_DIR/image-$NEXT_INDEX.jpg" "$CURRENT_IMAGE"
-
+          cp "$NEXT_IMAGE" "$CURRENT_IMAGE"
           echo "$NEXT_INDEX" > "$INDEX_FILE"
 
       - name: Commit changes
+        shell: bash
         run: |
+          set -euo pipefail
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add assets/slideshow/current.jpg
           git add assets/slideshow/index.txt
 
-          git diff --cached --quiet || git commit -m "chore: rotate profile slideshow"
+          if git diff --cached --quiet; then
+            echo "No changes detected."
+            exit 0
+          fi
+
+          git commit -m "chore: rotate profile slideshow"
+
+      - name: Sync with main
+        run: |
+          git pull --rebase origin main
 
       - name: Push changes
         run: |
-          git push
+          git push origin main
